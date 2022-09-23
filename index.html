@@ -5,47 +5,60 @@
     </head>
     <style>
         h1{
-
-            border-width: 10px;
-            border-style: solid;
-            width: 150px;
-            height: 50px;
-            border-color: rgb(172, 171, 233);
-            border-style: double;
-            padding: 5px;
-            text-align: center;
-            color: azure;
+            /* border-width: 10px;
+            border-style: outset; */
+            letter-spacing: 10px;
+            /* border-color: rgb(172, 171, 233); */
+            color: rgb(172, 171, 233);
+            text-shadow: 5px 5px black;
+            
         }
-        .banner{
-            padding-top: 250px;
-            width:100%;
-            height: 525px;
-            background-image: 
-        url("./Kinesis_bg.webp");
-        }
-        .parent{
-            display: flex;
-            justify-content: center;
-        }
-        .must{
+        h2{
             position:absolute;
+            width:300px;
+            left:30px;
+            top:50px;
             color:burlywood;
             letter-spacing: 3px;
-            left: 100px;
-            top: 50px;;
+        }
+        .button{
+            background:transparent;
+            position: absolute;
+            top:50px;
+            left:320px;
+        }
+        .button:hover .hover{
+            display: block;
+            transform: translate(0px, 5px);
+            -webkit-transform: translate(0px, 5px);
+            
+        }
+        .hover{
+            display: none;
+            background-color: transparent;
+        }
+        
+        body{
+            background-image: url("./Kinesis_bg.webp");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
         }
     </style>
-    <body>
-        <div class="banner">
-            <div class="parent">
-                <h1>天譴</h1>
-            </div>
-            <div class="must">
-                <h2 class="text">常用網站:</h2>
-                <a href="https://maplestory.beanfun.com/main"><img src="./MapleStory-Taiwan.png" width="100px" height="50px"/></a><br><br><br>
+    <script>
+       
+    </script>
+    <body>  
+        <div class="button">
+            <h1>天譴</h1><br>
+            <h2>常用網站 ▼</h2><br>
+            <div class="hover">
+                <hr>
+                <a href="https://maplestory.beanfun.com/main"><img src="./MapleStory-Taiwan.png" width="100px" height="60px"/></a><br><br><br>
                 <a href="https://github.com/"><img src="./github_hero_2.webp" width="100px" height="60px"/></a><br><br><br>
-                <a href="https://shopee.tw/"><img src="./unnamed.webp" width="100px" height="90px"/></a><br><br><br>
-                <a href="https://www.8591.com.tw/"><img src="./unnamed.png" width="100px" height="90px"/></a><br><br><br>
+                <a href="https://shopee.tw/"><img src="./unnamed.webp"  width="60px" height="60px"/></a><br><br><br>
+                <a href="https://www.8591.com.tw/"><img src="./unnamed.png" width="60px" height="60px"/></a>
             </div>
         </div>
     </body>
